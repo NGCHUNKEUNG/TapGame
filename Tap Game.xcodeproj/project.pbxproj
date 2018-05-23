@@ -14,10 +14,9 @@
 		5931B368208CFBBF007DC55E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5931B366208CFBBF007DC55E /* Main.storyboard */; };
 		5931B36A208CFBBF007DC55E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5931B369208CFBBF007DC55E /* Assets.xcassets */; };
 		5931B36D208CFBBF007DC55E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5931B36B208CFBBF007DC55E /* LaunchScreen.storyboard */; };
-		5931B378208CFBBF007DC55E /* Tap_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5931B377208CFBBF007DC55E /* Tap_GameTests.swift */; };
-		5931B383208CFBBF007DC55E /* Tap_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5931B382208CFBBF007DC55E /* Tap_GameUITests.swift */; };
 		5954C37920A6A9E30076DD93 /* GameMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5954C37820A6A9E30076DD93 /* GameMenu.sks */; };
 		5954C37D20A6AA020076DD93 /* GameMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5954C37C20A6AA020076DD93 /* GameMenu.swift */; };
+		598C15E920AE9548008B4BB1 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598C15E820AE9548008B4BB1 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,13 +47,10 @@
 		5931B36C208CFBBF007DC55E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5931B36E208CFBBF007DC55E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5931B373208CFBBF007DC55E /* Tap GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tap GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5931B377208CFBBF007DC55E /* Tap_GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap_GameTests.swift; sourceTree = "<group>"; };
-		5931B379208CFBBF007DC55E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5931B37E208CFBBF007DC55E /* Tap GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tap GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5931B382208CFBBF007DC55E /* Tap_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap_GameUITests.swift; sourceTree = "<group>"; };
-		5931B384208CFBBF007DC55E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5954C37820A6A9E30076DD93 /* GameMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameMenu.sks; sourceTree = "<group>"; };
 		5954C37C20A6AA020076DD93 /* GameMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMenu.swift; sourceTree = "<group>"; };
+		598C15E820AE9548008B4BB1 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				5931B35B208CFBBF007DC55E /* Tap Game */,
-				5931B376208CFBBF007DC55E /* Tap GameTests */,
-				5931B381208CFBBF007DC55E /* Tap GameUITests */,
 				5931B35A208CFBBF007DC55E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,30 +105,13 @@
 				5954C37820A6A9E30076DD93 /* GameMenu.sks */,
 				5954C37C20A6AA020076DD93 /* GameMenu.swift */,
 				5931B364208CFBBF007DC55E /* GameViewController.swift */,
+				598C15E820AE9548008B4BB1 /* Helper.swift */,
 				5931B366208CFBBF007DC55E /* Main.storyboard */,
 				5931B369208CFBBF007DC55E /* Assets.xcassets */,
 				5931B36B208CFBBF007DC55E /* LaunchScreen.storyboard */,
 				5931B36E208CFBBF007DC55E /* Info.plist */,
 			);
 			path = "Tap Game";
-			sourceTree = "<group>";
-		};
-		5931B376208CFBBF007DC55E /* Tap GameTests */ = {
-			isa = PBXGroup;
-			children = (
-				5931B377208CFBBF007DC55E /* Tap_GameTests.swift */,
-				5931B379208CFBBF007DC55E /* Info.plist */,
-			);
-			path = "Tap GameTests";
-			sourceTree = "<group>";
-		};
-		5931B381208CFBBF007DC55E /* Tap GameUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5931B382208CFBBF007DC55E /* Tap_GameUITests.swift */,
-				5931B384208CFBBF007DC55E /* Info.plist */,
-			);
-			path = "Tap GameUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +252,7 @@
 			files = (
 				5954C37D20A6AA020076DD93 /* GameMenu.swift in Sources */,
 				5931B363208CFBBF007DC55E /* GameScene.swift in Sources */,
+				598C15E920AE9548008B4BB1 /* Helper.swift in Sources */,
 				5931B365208CFBBF007DC55E /* GameViewController.swift in Sources */,
 				5931B35D208CFBBF007DC55E /* AppDelegate.swift in Sources */,
 			);
@@ -284,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5931B378208CFBBF007DC55E /* Tap_GameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5931B383208CFBBF007DC55E /* Tap_GameUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
