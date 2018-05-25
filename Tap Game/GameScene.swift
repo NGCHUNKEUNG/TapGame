@@ -201,15 +201,15 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
             let randonNumber = Helper().randomBetweenTwoNumbers(firstNumber: 1, secondNumber: 8)
             switch Int(randonNumber) {
             case 1...4:
-                leftTrafficItem = SKSpriteNode(imageNamed: "orangeCar")
+                leftTrafficItem = SKSpriteNode(imageNamed: "pinkcarupdate")
                 leftTrafficItem.name = "orangeCar"
                 break
             case 5...8:
-                leftTrafficItem = SKSpriteNode(imageNamed: "greenCar")
+                leftTrafficItem = SKSpriteNode(imageNamed: "bluecarupdate")
                 leftTrafficItem.name = "greenCar"
                 break
             default:
-                leftTrafficItem = SKSpriteNode(imageNamed: "orangCar")
+                leftTrafficItem = SKSpriteNode(imageNamed: "pinkcarupdate")
                 leftTrafficItem.name = "orangeCar"
             }
             leftTrafficItem.anchorPoint = CGPoint(x: 0.5, y: 0.5)
