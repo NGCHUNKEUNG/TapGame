@@ -105,7 +105,7 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
     func setUp(){
         leftCar = self.childNode(withName: "leftCar") as! SKSpriteNode
         
-        centerPoint = self.frame.size.width / self.frame.size.height
+        centerPoint = self.frame.size.width 
         
         leftCar.physicsBody?.categoryBitMask = ColliderType.CAR_COLLIDER
         leftCar.physicsBody?.contactTestBitMask = ColliderType.ITEM_COLLIDER
